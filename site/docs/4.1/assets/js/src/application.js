@@ -57,6 +57,11 @@
     $('.bd-toggle-animated-progress').on('click', function () {
       $(this).siblings('.progress').find('.progress-bar-striped').toggleClass('progress-bar-animated')
     })
+    
+    // Activate animated progress bar
+    $('.bd-toggle-spinner').on('click', function () {
+      $(this).parent().next().toggleClass('active')
+    })
 
     // Insert copy to clipboard button before .highlight
     $('figure.highlight, div.highlight').each(function () {
